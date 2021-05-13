@@ -1,0 +1,190 @@
+<!DOCTYPE html> <!-- The new doctype -->
+<html lang="en">
+    <head>    
+        <meta charset="utf-8">        
+        <title>Aman Welfare Society</title>		
+        <link rel="icon" type="image/ico" href="../images/AmanWelfareLogo.jpg">
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">        
+    </head>    
+    <body>
+	    <nav>
+   	    <ul>
+			<li><a href="pages/underconstructionpage.html">Home</a></li>
+			<li><a href="pages/aboutus.html">About us</a></li>
+			<li><a href="pages/loginpage.html">Login</a></li>
+			<li><a href="pages/contactus.html">Contact us</a></li>
+			<li><a href="pages/underconstructionpage.html">Join Our Community</a></li>
+			<li><a href="pages/underconstructionpage.html">Upcoming events</a></li>
+			<li class="dropdown">
+				<a class="dropbtn">Events History</a>
+				<div class="dropdown-content">
+					<a href="#article1">Dance Competition</a>
+					<a href="#article2">Drawing Competition</a> 
+					<a href="#article3">Teacher's day</a>
+					<a href="#article4">Food distribution</a>
+					<a href="#article5">Umbrella distribution</a>
+					<a href="#article6">Sport's Club</a>
+				</div>
+			</li>
+		</ul>
+		</nav>		
+    	<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img class="resize" src="images/logo.jpg" alt="Aman welfare logo" style="width:100%">
+			</div>        
+			<div class="mySlides fade">
+				<img class="resize" src="images/BsnlKeSitare.jpg" alt="Dance activity" style="width:100%">
+			</div>			
+			<div class="mySlides fade">
+				<img class="resize" src="images/WomaniyajiSportsClub.jpg" alt="Sport's activity" style="width:100%">
+			</div>			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>        
+        </div>
+        <br>        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>        
+        <script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			function plusSlides(n) {
+			showSlides(slideIndex += n);
+			}
+			function currentSlide(n) {
+			showSlides(slideIndex = n);
+			}
+			function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			}
+        </script>
+    	<section id="page"> <!-- Defining the #page section with the section tag -->    
+            <header> <!-- Defining the header section of the page with the appropriate tag -->            
+                <hgroup>
+					<h1>Aman Welfare Society</h1>
+					<h3>We believe in equality for all. Here's how we are constantly working towards achieving this:</h3>
+				</hgroup>                          
+            </header>            
+            <section id="articles"> <!-- A new section with the articles -->
+				<!-- Article 1 start -->
+                <div class="line"></div>  <!-- Dividing line -->                
+                <article id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+                    <h2>Dance Competition<a class="go_up" href="#" class="up">&uparrow;</a></h2>
+                    <div class="line"></div>                    
+                    <div class="articleBody clear">                    
+                    	<figure> <!-- The figure tag marks data (usually an image) that is part of the article -->
+	                    	<a href="pages/dancepage.html"><img src="images/Event6.2.jpg" alt="BSNL ke sitare dance event" width="500" height="300"></a>
+                        </figure>                        
+                        <p>Why people of every age are crazy for dance, got to see in the BSNL ke Sitare Dance competition.
+                           The event was on peak and participants went through various levels of competition. The judges recognized some great talents 
+                           and gave participants very useful tips by seeing their great presentations! All participants were given certificates. 
+                           The grand finale winners were titled with "BSNL ke Sitare" and rewarded with exciting prizes, certificates and medals.</p>
+                        <p>The particpants got chance to learn some new dance moves, grow their network and most important, HAD FUN.</p>
+						<p>President Mrs. * Manju Gupta * expressed gratitude and thanks to everyone on the successful event of dance audition organized by * AMAN WELFARE SOCIETY *</p>
+						<p class="pbold">Click on the image for more information</p>
+                    </div>
+                </article>                
+				<!-- Article 1 end -->
+				<!-- Article 2 start -->
+                <div class="line"></div>                
+                <article id="article2">
+                    <h2>Drawing Competition<a class="go_up" href="#" class="up">&uparrow;</a></h2>                    
+                    <div class="line"></div>                    
+                    <div class="articleBody clear">
+                    	<figure>
+	                    	<a href="pages/underconstructionpage.html"><img src="images/Event5.5.jpg" alt="Drawing Competition" width="500" height="300" /></a>
+                        </figure>                        
+                        <p>The children in Bhopal had day of fun and learning when a drawing competition was conducted for them. Kids were asked to use their imaginations and draw whatever they wanted to. They came up with things which they found beautiful or inspiring. Many drew from nature and many picked things and instances from their daily lives.</p>
+						<p>More than 100 children, most of who live in deplorable conditions, used painting competition to give shape to their dreams.</p>
+						<p>We believe every child is special. Slum children don't get opportunity to showcase their talent. An event like this may help them to give shape to their dreams.</p>
+						<p class="pbold">Click on the image for more information</p>
+                    </div>
+                </article>                
+				<!-- Article 2 end -->
+				<!-- Article 3 start -->
+                <div class="line"></div>                
+                <article id="article3">
+                    <h2>Helping little children achieve their dreams<a class="go_up" href="#" class="up">&uparrow;</a></h2>                    
+                    <div class="line"></div>                    
+                    <div class="articleBody clear">
+                    	<figure>
+	                    	<a href="pages/underconstructionpage.html"><img src="images/Event4.0.jpg" alt="MUsic System Distribution" width="500" height="300" /></a>
+                        </figure>                        
+                        <p>On the occasion of teacher's day, Aman Welfare Society gifted music system to the underprivileged students to help them explore their hobbies and dreams apart from academic learning.</p>
+                        <p>The future of poor children in India living along the street and slum is in darkness. Due to a lack of attention these children have stolen loot, have addictions, have gone the way of crime. Because alienating get them from all over the place. These children need love and guidance. This exposure enabled the kids to share their story, about their needs and what problems they are going through. Giving a Gift is a wonderful way to reach out to these children and vulnerable families and make a positive difference to their lives, while at the same time giving a gift brought a smile to their face.</p>
+						<p class="pbold">Click on the image for more information</p>
+                    </div>
+                </article>               
+				<!-- Article 3 end -->
+				<!-- Article 4 start -->
+                <div class="line"></div>                
+                <article id="article4">
+                    <h2>PROVIDING FOOD, WATER AND SAFE SHELTER TO PEOPLE IN NEED<a class="go_up" href="#" class="up">&uparrow;</a></h2>                    
+                    <div class="line"></div>                    
+                    <div class="articleBody clear">
+                    	<figure>
+	                    	<a href="pages/underconstructionpage.html"><img src="images/Event2.0.jpg" alt="Distribution of food" width="500" height="300" /></a>
+                        </figure>                        
+                        <p>Close to a billion people – one-eighth of the world’s population – still live in hunger. The motto of our NGO is- "One small step can make a difference"✨ Keeping this in mind, Aman Welfare Society donated food to the underprivileged section in the Cancer Hospital of Bhopal.</p>
+                        <p>Despite significant economic progress in the past decade, there are so many people who do not get food. That's why we're working to feed the hungry. Our volunteers served the meal to the homeless people. We realised from their blessings that we were not feeding food, we're feeding them love and kindness, which is what exactly Amma does.</p>
+						<p>The volunteers also said they feel honored and blessed for being able to serve in this way.</p>
+						<p class="pbold">Click on the image for more information</p>
+                    </div>
+                </article>                
+				<!-- Article 4 end -->				
+				<!-- Article 5 start -->
+                <div class="line"></div>                
+                <article id="article5">
+                    <h2>DISTRIBUTION OF UMBRELLA<a class="go_up" href="#" class="up">&uparrow;</a></h2>                    
+                    <div class="line"></div>                    
+                    <div class="articleBody clear">
+                    	<figure>
+	                    	<a href="pages/underconstructionpage.html"><img src="images/Event3.0.jpg" alt="Umbrella distribution" width="500" height="300" /></a>
+                        </figure>                                                
+                        <p>Apart from education, Aman welfare society distributed umbrella with the motive of meeting preliminary needs for the well being and 
+						upliftment of poor kids in Pampapur slum of Bhopal.</p>
+						<p>Very often, school going slum kids gets sick in rainy season after getting wet. They suffer with cold, cough, fever and other diseases which results in skipping classes. With the main aim to relieve them with such circumstances and spreading of such diseases, our society members distributed umbrellas to these kids. In association with President of society Mrs. Manju Gupta, the society members who helped in making this event successful were Vice President Mrs. Sunita Sharma, Mrs. Trapti Agrawal, Mrs. Sarita Sharma, Mr. Hiralal Dunge, Mr. Babulal Soni, Mrs. Nidhi Chourasiya and other society members.</p>
+						<p class="pbold">Click on the image for more information</p>
+                    </div>
+                </article>                
+				<!-- Article 5 end -->			
+				<!-- Article 6 start -->
+                <div class="line"></div>                
+                <article id="article6">
+                    <h2>SPORT'S ACTIVITIES<a class="go_up" href="#" class="up">&uparrow;</a></h2>                    
+                    <div class="line"></div>                    
+                    <div class="articleBody clear">
+                    	<figure>
+	                    	<a href="pages/sportspage.html"><img src="images/WomaniyajiSportsClub.jpg" alt="Sport's activity" width="500" height="300" /></a>
+                        </figure>                       
+                        <p>Participating in sports is a great way to stay healthy. But the benefits go far beyond that. Those who participate in sports have improved cardiovascular health, helps manage weight, lower risk of heart disease, reduced blood pressure, improved muscular strength and endurance, stress relief and many more.</p>
+                        <p>Unfortunately, women do not get time to participate in sport's because of their hectic schedule. Also, with the onset of adolescence, female sports participation drops by more than 20 per cent. This is why we conducted platform for advancement of women and to encourage them in sport's activity.</p>
+						<p class="pbold">Click on the image for more information</p>
+                    </div>
+                </article>                
+				<!-- Article 6 end -->
+            </section>
+        <footer> <!-- Marking the footer section -->
+           <div class="line"></div>           
+			<a href="mailto: amansociety2018@gmail.com">Mail: amansociety2018@gmail.com</a><br><br>
+			<a href="https://www.facebook.com/amanwelfaresocietypage/" class="facebook">Connect with us on facebook</a><br><br>
+			<p>Copyright 2020 - facebook.com/amanwelfaresocietypage/</p>
+        </footer>            
+		</section> <!-- Closing the #page section -->        
+    </body>
+</html>

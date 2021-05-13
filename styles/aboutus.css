@@ -1,0 +1,122 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+/* The navigation styling: */
+nav{
+	background:black;
+	padding:0 30px;
+	position:absolute;
+	right:0;
+	top:0;
+}
+nav ul li{
+	display:inline;
+}
+nav ul li a{
+	color:white;
+	display:block;
+	float:left;
+	font-size:1.25em;
+	margin:3px 10px;
+	padding:7px 10px 4px;
+}
+nav ul li a:hover{
+	background-color:#f0f0f0;
+}
+/* style for header */
+header {
+	padding: 4.5em 0 2em 0;
+	border-bottom: 3px solid #931420;
+	background-image: -moz-linear-gradient(
+	    30deg, #99ccff 0%, #99ccff 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg, #99ccff 0%, #99ccff 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: -o-linear-gradient(
+	    30deg, #99ccff 0%, #99ccff 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: linear-gradient(
+	    30deg, #99ccff 0%, #99ccff 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+header h2 {
+	font-size: 175%;
+	color: #800000;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+	color:#1b1d33;
+}
+header img {
+	float: left;	
+	padding: 0 50px 20px 20px;
+}
+/* style for main */
+main {
+	clear: left;	
+}
+/* style for section */
+section {
+	width: 850px;
+	padding-right: 100px;
+	padding-top:20px;
+	float: right;
+}
+section p {
+	padding-bottom: .5em;
+}
+section ul {
+	padding: 0 0 .25em 1.25em;
+}
+section li {
+	padding-bottom: .35em;
+}
+section h2 {
+	color: #800000;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+/* the styles for the aside */
+aside {
+	width: 250px;
+	padding-top:20px;
+	margin-left:50px;
+	height:300px;
+	overflow:auto
+}
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+aside p{
+	padding-bottom: .25em;
+}
+aside h2 {
+	color: #800000;
+	font-size: 130%;	
+	padding: .5em 0 .25em 0;	
+}
+/* the styles for gallery */
+div.gallery {
+  width: 180px;
+  padding-top:5px;
+}
+div.gallery img:hover {
+   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+   opacity: 0.5;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  border-radius:4px;
+  border: 1px solid #ccc;
+}
+/* Footer styling: */
+footer{
+	text-align:center;
+	font-size:0.825em;
+	padding-top:40px;
+}
+
+

@@ -1,0 +1,27 @@
+/* style for body */
+body { 
+	text-align: center; 
+	padding: 150px; 
+	font: 20px Helvetica, sans-serif; 
+	color: #232647; 
+}
+/* style for h1 */
+h1 { 
+	font-size: 50px; 
+}
+/* style for article */
+article { 
+	display: block; 
+	text-align: left; 
+	width: 650px; 
+	margin: 0 auto; 
+}
+/* style for link */
+a { 
+	color: #dc8100; 
+	text-decoration: none; 
+}
+a:hover { 
+	color: #8ea6bf; 
+	text-decoration: none; 
+}
